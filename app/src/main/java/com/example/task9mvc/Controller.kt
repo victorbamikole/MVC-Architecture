@@ -6,10 +6,7 @@ import com.example.task9mvc.model.CommentsItem
 import com.example.task9mvc.model.PostListsItem
 import com.example.task9mvc.network.RetroInstance
 import com.example.task9mvc.network.RetroService
-import kotlinx.coroutines.DelicateCoroutinesApi
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 import retrofit2.Response
 import java.net.UnknownHostException
 
@@ -23,7 +20,7 @@ class Controller {
 
     @DelicateCoroutinesApi
     fun commentDetails(comment: CommentsItem) {
-        GlobalScope.launch(Dispatchers.IO) {
+        MainScope().launch(Dispatchers.IO) {
             try {
                 val retroInstance =
                     RetroInstance.getRetroInstance().create(RetroService::class.java)
@@ -45,7 +42,7 @@ class Controller {
 
     //This function is responsible of making Api call to our Api server in IO instead of main thread
     fun postDetails(post: PostListsItem) {
-        GlobalScope.launch(Dispatchers.IO) {
+        MainScope().launch(Dispatchers.IO) {
             try {
                 val retroInstance =
                     RetroInstance.getRetroInstance().create(RetroService::class.java)
@@ -82,7 +79,7 @@ class Controller {
     }
 
     fun searchPosts(idd: Int) {
-        GlobalScope.launch(Dispatchers.IO) {
+        MainScope().launch(Dispatchers.IO) {
             try {
                 val retroInstance =
                     RetroInstance.getRetroInstance().create(RetroService::class.java)
@@ -106,7 +103,7 @@ class Controller {
     //This function is responsible of making Api call to our Api server in IO instead of main thread
     fun callComments(id: Int) {
         try {
-            GlobalScope.launch(Dispatchers.IO) {
+            MainScope().launch(Dispatchers.IO) {
                 val retroInstance =
                     RetroInstance.getRetroInstance().create(RetroService::class.java)
                 val response = retroInstance.getComments(id)
