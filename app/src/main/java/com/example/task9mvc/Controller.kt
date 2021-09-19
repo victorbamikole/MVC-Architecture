@@ -66,7 +66,7 @@ class Controller {
 
     //This function is responsible of making Api call to our Api server in IO instead of main thread
     fun makeApiCall() {
-        GlobalScope.launch(Dispatchers.IO) {
+        MainScope().launch(Dispatchers.IO) {
             try {
                 val retroInstance =
                     RetroInstance.getRetroInstance().create(RetroService::class.java)
