@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <item name="textView" type="id">textView</item>-->
+<!--    <item name="commentBody" type="id">commentBody</item>-->
+<!--    <item name="textView2" type="id">textView2</item>-->
+<!--    <item name="email" type="id">email</item>-->
+<!--    <item name="textView3" type="id">textView3</item>-->
+<!--    <item name="name" type="id">name</item>-->
+<!--    <item name="postId" type="id">postId</item>-->
+<!--    <item name="postIdInput" type="id">postIdInput</item>-->
+<!--    <item name="createNewComment" type="id">createNewComment</item>-->
+<!--    <item name="innerRoot" type="id">innerRoot</item>-->
+<!--    <item name="cardView" type="id">cardView</item>-->
+<!--    <item name="searchBox" type="id">searchBox</item>-->
+<!--    <item name="searchBtn" type="id">searchBtn</item>-->
+<!--    <item name="progressBar" type="id">progressBar</item>-->
+<!--    <item name="recyclerView" type="id">recyclerView</item>-->
+<!--    <item name="createPostBtn" type="id">createPostBtn</item>-->
+<!--    <item name="fragmentContainer" type="id">fragmentContainer</item>-->
+<!--    <item name="editTitle" type="id">editTitle</item>-->
+<!--    <item name="postBody" type="id">postBody</item>-->
+<!--    <item name="userPostId" type="id">userPostId</item>-->
+<!--    <item name="createNewPost" type="id">createNewPost</item>-->
+</resources>
